@@ -6,4 +6,5 @@
         $(".banner").css({width: windowWidth, height: windowHeight - 60});
     }
     updateWindowSize();
+
 })();
