@@ -123,9 +123,6 @@ $(window).load(function() {
 });
 
 
-
-
-
 //jQuery
 $(window).load(function() {    
 
