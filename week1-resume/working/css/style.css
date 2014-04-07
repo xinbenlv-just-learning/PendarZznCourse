@@ -106,3 +106,12 @@ h2 {
 .navbar {
     background-color: #262B37;
 }
+
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background: #1b1f29;
+    color: #fff;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus {
+    background: #1b1f29;
+    color: #c3c8d6;
+}
