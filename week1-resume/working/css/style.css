@@ -41,8 +41,18 @@ body {
 h1 {
     font-size: 80px;
     text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    height: 98px;
+    margin: 0px;
+    line-height: 90px;
 }
 
 h2 {
-    font-size:
+    font-size: 34px;
+    height: 38px;
+    line-height: 38px;
+    font-weight: 300;
+    font-family:'Open Sans', sans-serif;
+    margin: 0px;
 }
