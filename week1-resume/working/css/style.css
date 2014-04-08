@@ -8,6 +8,8 @@ body {
     height: 100%;
     color:#fff;
     line-height: 20px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 a {
@@ -50,20 +52,44 @@ h1 {
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    height: 98px;
     margin: 0px;
     line-height: 90px;
+    padding-bottom:8px;
 }
 
 h2 {
     font-size: 34px;
-    height: 38px;
     line-height: 38px;
     font-weight: 300;
     font-family:'Open Sans', sans-serif;
     margin: 0px;
 }
 
+@media screen and (max-width: 991px) {
+    .title-box h1 {
+        font-size: 65px;
+        line-height: 71px;
+    }
+    .title-box h2 {
+        font-size: 28px;
+    }
+    .title-box {
+        padding-left:25px;
+        padding-right:25px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .title-box h1 {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .title-box h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+/* ---------------------- Nav Bar ------------------------ */
 .nav ul {
     text-align: center;
 }
@@ -106,7 +132,10 @@ h2 {
 .navbar {
     background-color: #262B37;
 }
-
+.left-right-0 {
+    left: 0;
+    right: 0;
+}
 .navbar-inverse .navbar-nav>.active>a:hover {
     background: #1b1f29;
     color: #fff;
@@ -114,4 +143,17 @@ h2 {
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus {
     background: #1b1f29;
     color: #c3c8d6;
+}
+
+.navbar-fix-top {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+/* ---------------------- Sections ------------------------ */
+
+.aboutme {
+    background:#00bdbd;
+    color:#fff;
+    position:relative;
 }
