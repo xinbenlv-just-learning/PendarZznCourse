@@ -23,6 +23,7 @@
 ## 3. Questions to ask
 * Question: (css) in .title-box, it seems I will have to add left:0 and right:0 to make the auto margin take effect, why?
 * Question: How margin auto is determined
+* Question: On aliment, box-border etc, what is a good practice to achieve pixel perfect.
 
 ## 4. Known Issue (I don't plan to fix)
 1. First page box "top" is different

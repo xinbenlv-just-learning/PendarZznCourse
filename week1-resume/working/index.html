@@ -20,6 +20,8 @@
         <h1>I'm Jonathan Doe</h1>
         <h2>Design & Build Beautiful Crafted Web Experiences</h2>
     </div>
+    <div class="navbar-placeholder">
+    </div>
     <div class="navbar-wrapper">
         <div class="container">
             <div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -31,12 +33,12 @@
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="#">Experience</a></li>
-                            <li><a href="#">Education</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#section_aboutme">About</a></li>
+                            <li><a href="#section_skills">Skills</a></li>
+                            <li><a href="#section_experience">Experience</a></li>
+                            <li><a href="#section_education">Education</a></li>
+                            <li><a href="#section_portfolio">Portfolio</a></li>
+                            <li><a href="#section_contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -44,21 +46,83 @@
         </div>
     </div>
 </header>
-<section class="aboutme">
-    <div class="banner">
-    <h2>About Me</h2>
-    <p>A small introduction about my self</p>
+<section class="aboutme" id="section_aboutme">
+    <div class="container">
+        <div class="heading">
+        <h2>About Me</h2>
+        <p>A small introduction about my self</p>
+    </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                <h3>Jonathan Doe</h3>
+                <h4 class="sub-heading">Webdesigner & Web Developer from Melbourne</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. cillum dolore eu fugiat nulla pariatur. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>nulla pariatur.uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a class="btn-download" href="#">Download Printable Resume</a>
+            </div>
+            <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 profile-pic-wrapper">
+                <img src="images/me.jpg" alt="" class="round-pic margin-top-20"/>
+            </div>
+        </div>
     </div>
 </section>
-<section>
-    <div class="banner">
-        <h2>Technical Skills</h2>
+
+<section class="skills" id="section_skills">
+    <div class="container">
+        <div class="heading">
+            <h2>TECHNICAL SKILLS</h2>
+            <p>I can say i’m quite good at</p>
+        </div>
+        <div class="row">
+            <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="90"> <span class="percent"></span> </span>
+                    <h4>Photoshop</h4>
+                    <p>Donec accumsan ligula vitae mag na curabitur id</p>
+                </div>
+            </div>
+            <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="80"> <span class="percent"></span> </span>
+                    <h4>Illustrator</h4>
+                    <p>Donec accumsan ligula vitae mag na curabitur id</p>
+                </div>
+            </div>
+            <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="80"> <span class="percent"></span> </span>
+                    <h4>Flash</h4>
+                    <p>Donec accumsan ligula vitae mag na curabitur id</p>
+                </div>
+            </div>
+            <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="75"> <span class="percent"></span> </span>
+                    <h4>HTML5 / CSS3</h4>
+                    <p>Donec accumsan ligula vitae mag na curabitur id</p>
+                </div>
+            </div>
+            <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="60"> <span class="percent"></span> </span>
+                    <h4>jQuery</h4>
+                    <p>Donec accumsan ligula vitae mag na curabitur id</p>
+                </div>
+            </div>
+            <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+                <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="65"> <span class="percent"></span> </span>
+                    <h4>PHP / MySQL</h4>
+                    <p>Donec accumsan ligula vitae mag na curabitur id</p>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+<section id="section_experience"></section>
+<section id="section_education"></section>
+<section id="section_portfolio"></section>
+<section id="section_contact"></section>
 <!--modernizr js-->
 <script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
 <!--jquary min js-->
 <script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.easypiechart.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/custom.js"></script>
 </body>

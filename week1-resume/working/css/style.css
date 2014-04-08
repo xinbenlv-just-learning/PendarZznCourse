@@ -13,11 +13,65 @@ body {
 }
 
 a {
+    color: white;
     outline-color: rgb(195, 200, 214);
     outline-style: none;
     outline-width: 0px;
 }
 
+h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 90px;
+    padding-bottom:8px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 300;
+    font-family:'Open Sans', sans-serif;
+    margin: 0px;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 6px;
+    font-weight: 400;
+    margin: 0px;
+}
+h4 {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 19px;
+    line-height: 24px;
+    padding-bottom: 6px;
+    font-weight: 600;
+    margin: 0px;
+}
+h4.sub-heading{
+    font-weight:600;
+    font-size:18px;
+    padding-bottom:22px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    line-height:21px;
+    font-weight:400;
+    padding-bottom:22px;
+    margin:0px;
+}
+
+.container .row{
+    margin:0px;
+}
+/* -------------------------------------------*/
 .bg-panel {
     background-color: rgb(27, 31, 43);
     height: 100%;
@@ -45,24 +99,11 @@ a {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-    font-size: 80px;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    margin: 0px;
-    line-height: 90px;
-    padding-bottom:8px;
-}
 
-h2 {
+.title-box h2 {
     font-size: 34px;
-    line-height: 38px;
-    font-weight: 300;
-    font-family:'Open Sans', sans-serif;
-    margin: 0px;
+    text-transform: none;
 }
-
 @media screen and (max-width: 991px) {
     .title-box h1 {
         font-size: 65px;
@@ -159,6 +200,106 @@ h2 {
 .navbar-collapse.in{
     max-height:100%;
 }
+.navbar-placeholder {
+    height: 63px;
+    display: none;
+}
+
+
+/* ---------------------- About Me ------------------------ */
+
+.aboutme {
+    background:#00bdbd;
+    color:#fff;
+    position:relative;
+}
+
+.round-pic {
+    border-radius: 50%;
+}
+
+.aboutme .container{
+    padding-top:85px ;
+    padding-bottom:93px ;
+}
+
+.heading{
+    text-align:center;
+    padding-bottom:45px;
+}
+
+.btn-download {
+    background-color: rgb(71, 77, 93);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 22px;
+    display: inline-block;
+}
+
+.margin-top-20 {
+    margin-top:20px;
+}
+
+/* ---------------------- Skill ------------------------ */
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 152px;
+    height: 152px;
+    margin-bottom: 26px;
+    text-align: center;
+}
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em;
+}
+.skills {
+    background:#eeeeee;
+    color:#474d5d;
+    margin:0 auto;
+    margin-bottom:23px;
+    text-align:center;
+    padding:0px;
+    float:none;
+}
+.skills h2 {
+    color: #ff675f;
+
+}
+
+.skills .container {
+    padding-top: 85px;
+    padding-bottom: 69px;
+}
+
+.skills p {
+    color: #474d5d;
+}
+
+.skills .row p{
+    color:#84868d;
+    font-size:13px;
+    line-height:18px;
+    text-align:center;
+}
+.skills .heading p {
+    padding-bottom: 41px;
+}
+.percent {
+    display: inline-block;
+    font-size:21px;
+    color:#474d5d;
+    line-height: 152px;
+    z-index: 2;
+}
+/* ------------------------- Responsive -----------------------*/
 @media screen and (max-width: 767px) {
     .navbar-header {
         display:block;
@@ -189,13 +330,7 @@ h2 {
         padding-left:18px;
         padding-right:18px;
     }
-
-}
-
-/* ---------------------- Sections ------------------------ */
-
-.aboutme {
-    background:#00bdbd;
-    color:#fff;
-    position:relative;
+    .profile-pic-wrapper {
+        text-align: center;
+    }
 }
