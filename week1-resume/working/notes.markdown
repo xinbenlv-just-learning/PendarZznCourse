@@ -18,7 +18,6 @@
 
 ## 2. Document the tricky things during implementation (also served as a todo list)
 * if you want to have a full page, you will have to use javascript to set the height
-* TODO switch from bgWeigth and bgHeight.
 * TODO change font-size based on screensize
 
 ## 3. Questions to ask
@@ -27,3 +26,4 @@
 
 ## 4. Known Issue (I don't plan to fix)
 1. First page box "top" is different
+2. First page Image fill background
