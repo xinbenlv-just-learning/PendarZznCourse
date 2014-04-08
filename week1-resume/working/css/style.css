@@ -17,8 +17,6 @@ a {
     outline-style: none;
     outline-width: 0px;
 }
-.banner {
-}
 
 .bg-panel {
     background-color: rgb(27, 31, 43);
@@ -95,10 +93,11 @@ h2 {
 }
 .navbar.navbar-inverse.navbar-static-top {
     margin-bottom: 0px;
+
+    font-size: 14px;
 }
 .navbar.navbar-inverse.navbar-static-top a  {
     padding:22px 25px;
-    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none solid rgb(195, 200, 214);
     text-transform: uppercase;
@@ -106,6 +105,10 @@ h2 {
     font-weight: 300;
     color:  #c3c8d6;
     display: inline-block;
+}
+
+.navbar-header{
+    display:none;
 }
 .navbar-collapse{
     padding:0;
@@ -145,10 +148,40 @@ h2 {
     color: #c3c8d6;
 }
 
+.navbar-toggle{
+    margin-top:14px;
+}
 .navbar-fix-top {
     position: fixed;
     top: 0px;
     width: 100%;
+}
+.navbar-collapse.in{
+    max-height:100%;
+}
+@media screen and (max-width: 767px) {
+    .navbar-header {
+        display:block;
+    }
+
+    .navbar.navbar-inverse.navbar-static-top a{
+        display:block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-wrapper .container,
+    .navbar.navbar-inverse.navbar-static-top .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .navbar.navbar-inverse.navbar-static-top a {
+        padding-left: 17px;
+    }
+
 }
 /* ---------------------- Sections ------------------------ */
 
