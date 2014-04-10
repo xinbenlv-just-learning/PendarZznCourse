@@ -28,3 +28,4 @@
 ## 4. Known Issue (I don't plan to fix)
 1. First page box "top" is different
 2. First page Image fill background
+[pendar]: suggesting using css's background-size: cover, or use jquery's  imagefill.js http://johnpolacek.github.io/imagefill.js/
