@@ -10,6 +10,11 @@ body {
     line-height: 20px;
     overflow-x: hidden;
     overflow-y: scroll;
+
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
 }
 
 a {
@@ -59,6 +64,14 @@ h4.sub-heading{
     padding-bottom:22px;
 }
 
+h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+    line-height:24px;
+    padding-bottom:6px;
+    font-weight:400;
+    margin:0px;
+}
 p{
     font-family: 'Open Sans', sans-serif;
     font-size:14px;
@@ -271,7 +284,6 @@ p{
 }
 .skills h2 {
     color: #ff675f;
-
 }
 
 .skills .container {
@@ -299,7 +311,381 @@ p{
     line-height: 152px;
     z-index: 2;
 }
-/* ------------------------- Responsive -----------------------*/
+
+.skills h4{
+    font-weight:700;
+    text-transform:uppercase;
+}
+/* ------------------------- Work Experience --- -------------- */
+.work-experience .container{
+    padding-top:85px ;
+    padding-bottom:90px ;
+}
+.work-experience {
+    color: #ff675f;
+}
+
+.work-experience p {
+    color: #474d5d;
+}
+
+.work-experience {
+    margin:0 auto;
+    text-align:center;
+    padding:0px;
+    float:none;
+}
+
+.work-experience .heading p {
+    padding-bottom: 41px;
+}
+
+.work-experience h4{
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.work-experience p{
+    color:#84868d;
+    /*font-size:13px;*/
+    line-height:18px;
+}
+
+.work-year {
+    font-size:17px;
+    color:#fff;
+    background:#ff675f;
+    text-align:center;
+    width:120px;
+    height:120px;
+    padding:40px 0 40px 0;
+
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.arrow-part{
+    float:left;
+    width:15px;
+    height:50px;
+    background:url(../images/arrow-left.png) no-repeat 0 23px;
+}
+.work-box {
+    width:auto;
+    background:#f3f3f3;
+    border-bottom:solid 4px #eeeeee;
+    padding:22px 47px 6px 47px;
+    margin-left:15px;
+    text-align:left;
+}
+
+.work-box p{
+    color:#84868d;
+    line-height:21px;
+}
+.work-box h4{
+    color:#474d5d;
+    padding-bottom:3px;
+}
+.work-box h5{
+    color:#474d5d;
+}
+
+.work-details .right-area{
+    border-left: solid 1px #eaeaea;
+    padding-bottom:47px;
+}
+.work-details:last-child .right-area{
+    padding-bottom:0px;
+}
+
+/* ------------------------- Education ------------------------ */
+
+.edu-experience {
+    color: #ff675f;
+}
+
+.edu-experience .container {
+    padding-top: 85px;
+    padding-bottom: 90px;
+}
+
+.edu-experience p {
+    color: #474d5d;
+}
+
+.edu-experience {
+    margin:0 auto;
+    text-align:center;
+    padding:0px;
+    float:none;
+}
+
+.edu-experience .heading p {
+    padding-bottom: 41px;
+}
+
+.edu-experience h4{
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.edu-experience p{
+    color:#84868d;
+    /*font-size:13px;*/
+    line-height:18px;
+}
+
+.edu-experience {
+    background: #eeeeee;
+}
+.edu-experience .work-box {
+    background-color: #FAFAFA;
+}
+
+
+.edu-experience .arrow-part{
+    background:url(../images/arrow-left-light.png) no-repeat 0 23px;
+}
+.edu-experience .work-box{
+    background:#fafafa;
+    border-bottom:solid 4px #e8e7e7;
+}
+
+.edu-experience .work-details .right-area{
+    border-left-color:#e5e4e4;
+}
+/*----------------------------------------------------
+ 10. Portfolio Style
+------------------------------------------------------*/
+.portfolio {
+    background-color:#2bb3dd;
+}
+.portfolio .container{
+    padding-top:85px ;
+    padding-bottom:90px ;
+}
+
+.portfolio .heading p{
+    padding-bottom:41px;
+}
+
+.portfolio h4{
+    font-weight:700;
+}
+
+
+.portfolio-filter{
+    display:block;
+    margin:0 auto;
+    text-align: center;
+}
+
+.portfolio-filter ul{
+    margin:0 auto;
+    text-align:center;
+    display:block;
+    margin-bottom:30px;
+}
+.portfolio-filter ul li{
+    display:inline-block;
+    margin:5px 5px;
+}
+.portfolio-filter ul li a{
+    padding:16px 18px;
+    font-size:13px;
+    line-height:15px;
+    color:#ffffff;
+    text-transform:uppercase;
+    display:block;
+    text-decoration:none;
+    border:solid 1px #95d9ee;
+
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+}
+
+.portfolio-filter ul li a:hover{
+    border:solid 1px #15596e;
+    color:#15596e;
+
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+}
+
+.portfolio-filter ul li a.current{
+    background:#15596e;
+    border:solid 1px #15596e;
+    color:#fff;
+}
+/* ------------------------------------------------------------ */
+
+.contact{
+    background:#fff;
+}
+.contact .container{
+    padding-top:85px ;
+    padding-bottom:90px ;
+}
+
+.contact h2{
+    color:#ff675f;
+}
+.contact p{
+    color:#84868d;
+    /*font-size:13px;*/
+    line-height:18px;
+}
+.contact .heading p{
+    padding-bottom:41px;
+}
+
+.contact h4{
+    font-weight:700;
+}
+.padding-bottom-0 {
+    padding-bottom:0px !important;
+}
+#map_area {
+    background:url(../images/map-bro.png) repeat-x 0 0;
+    padding-top:4px;
+    height:400px;
+    overflow:hidden;
+    width:100%;
+    margin:0;
+}
+
+
+#map_area iframe{
+    width:100%;
+    height:396px;
+    padding-bottom: 4px;
+    background:url(../images/map-bro.png) repeat-x 0 100%;
+}
+/* ---------------------------------------------------------------
+               Contact Details
+   --------------------------------------------------------------- */
+.contact-details{
+    background:#474d5d;
+}
+.contact-details .container{
+    padding-top:85px ;
+    padding-bottom:90px ;
+}
+.contact-details h4{
+    font-weight:600;
+    text-transform:uppercase;
+    padding-bottom:15px;
+}
+.contact-details p{
+    color:#93959c;
+    font-size:13px;
+    line-height:19px;
+    padding-bottom:14px;
+}
+.contact-details p a{
+    color:#93959c;
+}
+.contact-details p a:hover{
+    color:#a9abb0;
+    text-decoration:none;
+}
+
+.contact-details i{
+    padding-right:15px;
+}
+
+
+.conForm input{
+    background:#585f73;
+    color:#93959c;
+    padding:15px 30px;
+    border:none;
+    margin-right:3%;
+    margin-bottom:30px;
+    outline:none;
+    font-style:italic;
+}
+.conForm input.noMarr{
+    margin-right:0px;
+}
+
+.conForm textarea{
+    background:#585f73;
+    color:#93959c;
+    padding:15px 30px;
+    border:none;
+    margin-bottom:40px;
+    outline:none;
+    height:100px;
+    font-style:italic;
+}
+
+
+.conForm .submitBnt{
+    background:#ff675f;
+    font-family: 'Open Sans', sans-serif;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    text-align:center;
+    float:right;
+    margin:0px;
+}
+.conForm .submitBnt:hover{
+    background:#f5534b;
+}
+
+.textGroup{
+    position:relative !important;
+    display: inline-block;
+    padding-left:0px !important;
+}
+/* ------------------------------------------------------------
+                      Footer
+   ------------------------------------------------------------ */
+.footer{
+    background:#00bdbd;
+}
+.footer .container{
+    padding:40px 0;
+}
+
+.footer ul{
+    margin:0 auto;
+    text-align:center;
+    list-style-type:none;
+}
+.footer ul li{
+    display:inline-block;
+    text-align:center;
+    background:#ffffff;
+    color:#00bdbd;
+    line-height:42px;
+    margin:0 6px;
+    width:42px !important;
+    height:42px !important;
+
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.footer ul li:hover{
+    background:#0a9f9f ;
+}
+.footer ul li:hover	a{
+    color:#fff;
+}
+
+.footer ul li a{
+    color:#00bdbd;
+    width:42px !important;
+    height:42px !important;
+}
+.footer ul li a i{
+    line-height:42px !important;
+}
+
+/* ------------------------- Responsive ----------------------- */
 @media screen and (max-width: 767px) {
     .navbar-header {
         display:block;
@@ -308,14 +694,33 @@ p{
     .navbar.navbar-inverse.navbar-static-top a{
         display:block;
     }
-}
 
+    .work-year {
+        margin: 0 auto;
+    }
+
+    .arrow-part {
+        float: none;
+        width: 100%;
+        height: 40px;
+        background: url(../images/arrow-top.png) no-repeat 50% 100%;
+    }
+
+    .edu-experience .arrow-part {
+        background: url(../images/arrow-top-light.png) no-repeat 50% 100%;
+    }
+
+    .work-details .right-area{
+        border-left:none;
+    }
+}
 @media screen and (max-width: 768px) {
     .navbar-wrapper .container,
     .navbar.navbar-inverse.navbar-static-top .container {
         padding-right: 15px;
         padding-left: 15px;
     }
+
 }
 
 @media screen and (max-width: 810px) {
@@ -334,3 +739,16 @@ p{
         text-align: center;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .work-year{
+        width:140px;
+        height:140px;
+        padding-top:50px;
+    }
+
+    .edu-experience .work-year{
+        padding-top:58px;
+    }
+}
+

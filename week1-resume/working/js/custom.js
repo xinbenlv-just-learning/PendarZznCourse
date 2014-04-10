@@ -29,7 +29,7 @@
         });
         var index=0;
         $(document).scroll(function(){
-            var top = $('.technical').height()-$(window).scrollTop();
+            var top = $('.skills').height()-$(window).scrollTop();
             console.log(top)
             if(top<-300){
                 if(index==0){
@@ -46,9 +46,12 @@
             }
         })
     }
+    var createFilter = function() {
 
+    }
     updateWindowSize();
     createCharts();
+    createFilter();
     $(window).scroll(positionNavBar);
 
 })();
