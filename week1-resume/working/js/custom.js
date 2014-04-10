@@ -15,6 +15,16 @@
             $(".navbar-wrapper").removeClass("navbar-fix-top");
             $(".navbar-placeholder").css({display:"none"});
         }
+
+        $("ul.nav.navbar-nav li a").each(function() {
+            var section = $(this).attr("href");
+            if ($(section).offset().top <= scrollTop + 60 &&
+                scrollTop + 60 <= $(section).height() + $(section).offset().top) {
+                $(this).parent().addClass("active");
+            } else {
+                $(this).parent().removeClass("active");
+            }
+        })
     }
     var createCharts = function() {
         $(window).load(function(){
@@ -30,7 +40,6 @@
         var index=0;
         $(document).scroll(function(){
             var top = $('.skills').height()-$(window).scrollTop();
-            console.log(top)
             if(top<-300){
                 if(index==0){
 
@@ -46,12 +55,25 @@
             }
         })
     }
-    var createFilter = function() {
 
-    }
     updateWindowSize();
     createCharts();
-    createFilter();
     $(window).scroll(positionNavBar);
 
+
+    // Somth page scroll
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top -60
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
 })();
