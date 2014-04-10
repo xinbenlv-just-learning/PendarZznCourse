@@ -61,7 +61,7 @@
     createCharts();
 
     $(window).scroll(positionNavBar);
-
+    $(window).resize(updateWindowSize);
 
     // Somth page scroll
     $(function() {
