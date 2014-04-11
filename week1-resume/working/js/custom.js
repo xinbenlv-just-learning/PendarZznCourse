@@ -5,7 +5,7 @@
         var windowWidth = $w.width();
         var windowHeight = $w.height();
         $(".banner").css({width: windowWidth, height: windowHeight - 60});
-        $("#hero_image_wrapper").imagefill();
+        //$("#hero_image_wrapper").imagefill();
     }
     var positionNavBar = function () {
         var scrollTop = $w.scrollTop();

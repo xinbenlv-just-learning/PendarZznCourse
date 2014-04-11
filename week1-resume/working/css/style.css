@@ -85,15 +85,18 @@ p{
     margin:0px;
 }
 /* -------------------------------------------*/
+
+#hero_image {
+    background-image: url('../images/1.jpg');
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    opacity: .2;
+}
 .bg-panel {
     background-color: rgb(27, 31, 43);
     height: 100%;
     overflow: hidden;
-}
-.bg-panel img {
-    width: 100%;
-    opacity: .2;
-    vertical-align: middle;
 }
 
 .noPadd{
