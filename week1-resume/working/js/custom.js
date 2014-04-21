@@ -1,6 +1,8 @@
 (function() {
     'strict';
     var $w = $(window);
+
+    // Define functions
     var updateWindowSize = function () {
         var windowWidth = $w.width();
         var windowHeight = $w.height();
@@ -56,12 +58,24 @@
             }
         })
     }
+    var loadGridRotator = function() {
+        // jQuery
+        $('#container').isotope({
+            // options...
+            itemSelector: '.item',
+            masonry: {
+                columnWidth: 200
+            }
+        });
+    }
+
+    // Set up handler
+    $(window).scroll(positionNavBar);
+    $(window).resize(updateWindowSize);
 
     updateWindowSize();
     createCharts();
-
-    $(window).scroll(positionNavBar);
-    $(window).resize(updateWindowSize);
+    loadGridRotator();
 
     // Somth page scroll
     $(function() {
@@ -78,4 +92,6 @@
             }
         });
     });
+
+
 })();
