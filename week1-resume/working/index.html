@@ -220,16 +220,16 @@
             <h2>Portfolio</h2>
             <p>showcase of my latest works</p>
         </div>
-        <div class="portfolio-filter">
+        <div class="portfolio-filter" id="portfolio_filter">
             <ul>
                 <li><a href="#" data-filter="*" class="">All</a></li>
-                <li><a href="#" data-filter=".photos" class="">Photos</a></li>
+                <li><a href="#" data-filter=".photo" class="">Photos</a></li>
                 <li><a href="#" data-filter=".branding" class="">Branding</a></li>
                 <li><a href="#" data-filter=".illustration" class="">Illustration</a></li>
             </ul>
         </div>
-        <div class="portfolio-container">
-            <ul class="row">
+        <div class="portfolio-container " id="portfolio_container">
+            <ul class="row isotope" id="portfolio_container_ul">
                 <li class="photo col-xs-6 col-sm-4 col-md-3 col-lg-3">
                     <div><img src="images/thu-1.jpg" alt=""/></div>
                 </li>
@@ -311,6 +311,7 @@
 <script src="js/jquery-imagefill.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/jquery.easypiechart.js"></script>
+<script src="js/jquery.isotope.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/custom.js"></script>
 </body>

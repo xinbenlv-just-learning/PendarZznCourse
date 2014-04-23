@@ -1,14 +1,16 @@
 (function() {
     'strict';
     var $w = $(window);
-
+    var log = function (msg) {
+        console.log(msg);
+    }
     // Define functions
     var updateWindowSize = function () {
         var windowWidth = $w.width();
         var windowHeight = $w.height();
         $(".banner").css({width: windowWidth, height: windowHeight - 60});
         //$("#hero_image_wrapper").imagefill();
-    }
+    };
     var positionNavBar = function () {
         var scrollTop = $w.scrollTop();
         if (scrollTop > $w.height() - 60) {
@@ -28,7 +30,7 @@
                 $(this).parent().removeClass("active");
             }
         })
-    }
+    };
     var createCharts = function() {
         $(window).load(function(){
             var chart = window.chart = $('.chart').data('easyPieChart');
@@ -57,28 +59,22 @@
                 index++;
             }
         })
-    }
+    };
     var loadGridRotator = function() {
         // jQuery
-        $('#container').isotope({
-            // options...
-            itemSelector: '.item',
-            masonry: {
-                columnWidth: 200
-            }
+        $('#portfolio_filter ul li a').click(function() {
+            var filter = $(this).attr('data-filter');
+            log(filter);
+            $('#portfolio_container_ul').isotope({
+                filter: filter
+            });
+            return false;
         });
-    }
 
-    // Set up handler
-    $(window).scroll(positionNavBar);
-    $(window).resize(updateWindowSize);
+    };
 
-    updateWindowSize();
-    createCharts();
-    loadGridRotator();
-
-    // Somth page scroll
-    $(function() {
+    var smoothPageScroll = function() {
+        // Somth page scroll
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
                 var target = $(this.hash);
@@ -91,7 +87,22 @@
                 }
             }
         });
+    };
+
+    $(window).load(function() {
+        $(window).scroll(positionNavBar);
+        $(window).resize(updateWindowSize);
+
+        updateWindowSize();
+        createCharts();
+        loadGridRotator();
+        smoothPageScroll();
+
+
     });
+    // Set up handler
+
+
 
 
 })();
