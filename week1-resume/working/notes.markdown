@@ -30,3 +30,4 @@
 2. First page Image fill background
 [pendar]: suggesting using css's background-size: cover, or use jquery's  imagefill.js http://johnpolacek.github.io/imagefill.js/
 3. When less than 767px wide the solution's education experience's red round bubble's text is not vertical aligned
+4. portfolio filtering does not work when in lightbox view navigation

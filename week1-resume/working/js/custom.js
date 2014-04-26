@@ -68,6 +68,8 @@
             $('#portfolio_container_ul').isotope({
                 filter: filter
             });
+            $('#portfolio_filter ul li a').removeClass('current');
+            $(this).addClass('current');
             return false;
         });
 
@@ -89,15 +91,21 @@
         });
     };
 
+    var setupLightbox = function() {
+
+        $( ".lb" ).rlightbox();
+        $( ".lb_title-overwritten" ).rlightbox({overwriteTitle: true});
+    }
     $(window).load(function() {
+
+        updateWindowSize();
         $(window).scroll(positionNavBar);
         $(window).resize(updateWindowSize);
 
-        updateWindowSize();
         createCharts();
         loadGridRotator();
         smoothPageScroll();
-
+        setupLightbox();
 
     });
     // Set up handler
